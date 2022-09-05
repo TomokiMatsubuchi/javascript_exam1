@@ -9,11 +9,12 @@ function add() {
     const coffeeId = parseInt(productIdElement.value);
     const number = parseInt(numberElement.value);
     let purchase = {
-      coffee: coffee[coffeeId - 1],
-      price: coffeePrice[coffeeId - 1],
-      number: number,
+        coffee: coffee[coffeeId - 1],
+        price: coffeePrice[coffeeId - 1],
+        number: number,
     };
     
+    console.log(purchase);
     let newPurchase = true;
 
     purchases.forEach((item) => {
