@@ -5,8 +5,25 @@
         <title>JavaScript</title>
     </head>
     <body>
-        JavaScript
-        <button onclick="clickAlert()">クリック</button>
+        <div id="parent">
+            <h1 class="title red">JavaScriptの学習</h1>
+            <p><strong>javascript</strong>とは何か</p>
+            <button id="btn">ターゲット</button>
+            <p class="display_none">クリックされました！</p>
+        </div>
+        <style>
+            .title{
+                color: red;
+            }
+            .background_pink{
+                background: pink;
+            }
+            .display_none{
+                display: none;
+            }
+
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script src="javascripts/sample.js" type="text/javascript"></script>
     </body>
 </html>
